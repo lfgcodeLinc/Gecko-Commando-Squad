@@ -43,6 +43,10 @@ angular
           templateUrl: 'views/create_event.html',
           controller : 'EventCreateCtrl'
         })
+        .when('/admin/event/:event/:category', {
+          templateUrl: 'views/new_project.html',
+          controller : 'ProjectCreateCtrl'
+        })
          .when('/vote/:email/:eventid', {
           templateUrl: 'views/vote.html',
           controller : 'VoteCtrl'
