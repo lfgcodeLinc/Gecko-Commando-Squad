@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="gccdApp">
+  <body ng-app="itisforgirls">
 
   <script>
-    var gccdApp = angular.module("gccdApp", ["firebase"]);
-    gccdApp.controller('MyController', ['$scope', '$firebase',
+    var itisforgirls = angular.module("itisforgirls", ["firebase"]);
+    itisforgirls.controller('MyController', ['$scope', '$firebase',
       function($scope, $firebase) {
         var ref = new Firebase("https://crackling-heat-7200.firebaseio.com/");
         $scope.messages = $firebase(ref).$asArray();
