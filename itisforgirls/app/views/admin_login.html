@@ -1,10 +1,14 @@
-<h1>ADMIN LOGIN</h1>
+<h2>Admin Login</h2>
 
-<div class="well-lg">
-  <form action='#/admin/home' ng-controller="AdminLoginCtrl" ng-submit="submitAdminLogin()">
-   <p> Email: <input type="email"></p>
-   <p> Password: <input type="password"></p>
-    <button type="submit" class="btn" >Submit</button>
+<div class="well">
+  <form name="adminForm" action='#/admin/home' ng-controller="AdminLoginCtrl" ng-submit="submitAdminLogin()">
+      <div class="form-group">
+          <label for="email">Email: </label><input type="email" class="form-control" name="email">
+      </div>
+      <div class="form-group">
+          <label for="password">Password: </label><input type="password" class="form-control" name="password">
+      </div>
+    <button type="submit" class="btn btn-primary" >Submit</button>
   </form>
 </div>
 
