@@ -35,10 +35,7 @@ angular
           templateUrl: 'views/admin_login.html',
           controller : 'AdminLoginCtrl'
         })
-         .when('/vote/:email/:eventid', {
-          templateUrl: 'views/vote.html',
-          controller : 'VoteCtrl'
-        })
+<<<<<<< HEAD
         .when('/admin_home', {
           templateUrl: 'views/admin_home.html',
           controller : 'AdminHomeCtrl'
@@ -46,6 +43,11 @@ angular
         .when('/create_event', {
           templateUrl: 'views/create_event.html',
           controller : 'CreateEventCtrl'
+=======
+         .when('/vote/:email/:eventid', {
+          templateUrl: 'views/vote.html',
+          controller : 'VoteCtrl'
+>>>>>>> d586f348c1781e2d81f2c4e442e59ff8fe103f1a
         })
       .otherwise({
         redirectTo: '/'
