@@ -1,5 +1,5 @@
 angular.module('itisforgirls')
-    .controller('VoteCtrl', function ($scope, $routeParams) {
+    .controller('VoteCtrl', function ($scope, $routeParams, $location) {
     	if ($routeParams.email=="email@email.com") {
     		$scope.categories = categories;
     		$scope.orig = angular.copy($scope.categories);
@@ -9,7 +9,7 @@ angular.module('itisforgirls')
     		$scope.categories = angular.copy($scope.orig);
     	}
     	$scope.submitRating = function() {
-    		
+    		$location.path('/submitRating');
     	}
     });
  
