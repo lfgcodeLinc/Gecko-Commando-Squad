@@ -4,7 +4,7 @@
   	<h4 class="well-lg alert-success">{{category.name}}</h4>
 		<ul>
 	         <li class="events-item" ng-repeat="project in category.projects">
-	            <span>{{project.name}} -</span>
+	            <span>{{project.name}}: </span>
 			 	<span>
 				 	<span star-rating rating-value="project.rating.current" max="project.rating.max" on-rating-selected="getSelectedRating(rating)"></span>
 	         		<span ng-show="project.rating.current>0">{{project.rating.current}} out of {{project.rating.max}}</span>
