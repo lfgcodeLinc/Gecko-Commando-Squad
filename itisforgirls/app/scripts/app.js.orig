@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc overview
- * @name gccdApp
+ * @name itisforgirls
  * @description
- * # gccdApp
+ * # itisforgirls
  *
  * Main module of the application.
  */

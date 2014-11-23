@@ -5,9 +5,9 @@
  * @name gccdApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the gccdApp
+ * Controller of the itisforgirls
  */
-angular.module('gccdApp')
+angular.module('itisforgirls')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
