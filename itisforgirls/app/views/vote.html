@@ -3,10 +3,12 @@
 	<div ng-repeat="category in categories">
   	<h4 class="well-lg alert-success">{{category.name}}</h4>
 		<ul>
-	         <li ng-repeat="project in category.projects"> 
-	            {{project.name}} - 
-	            <span star-rating rating-value="project.rating.current" max="project.rating.max" on-rating-selected="getSelectedRating(rating)"></span>        
-	         	<span ng-show="project.rating.current>0">{{project.rating.current}} out of {{project.rating.max}}</span>
+	         <li class="events-item" ng-repeat="project in category.projects">
+	            <span>{{project.name}} -</span>
+			 	<span>
+				 	<span star-rating rating-value="project.rating.current" max="project.rating.max" on-rating-selected="getSelectedRating(rating)"></span>
+	         		<span ng-show="project.rating.current>0">{{project.rating.current}} out of {{project.rating.max}}</span>
+			 	</span>
 	         </li>
 	     </ul>
      </div>
