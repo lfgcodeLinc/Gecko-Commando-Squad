@@ -41,7 +41,7 @@ angular
         })
         .when('/admin/event', {
           templateUrl: 'views/create_event.html',
-          controller : 'AdminEventCtrl'
+          controller : 'EventCreateCtrl'
         })
          .when('/vote/:email/:eventid', {
           templateUrl: 'views/vote.html',

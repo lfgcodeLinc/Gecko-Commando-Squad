@@ -31,11 +31,14 @@ $scope.submitForm = function() {
       'Karma'
     ];
     });
-  adminControllers.controller('AdminEventCtrl', function ($scope) {
+  adminControllers.controller('EventCreateCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    $scope.create = function(){}
-    });
+    $scope.submitForm = function() {
+        console.log("posting data....");
+        formData = $scope.form;
+        //console.log(formData);
+    };
