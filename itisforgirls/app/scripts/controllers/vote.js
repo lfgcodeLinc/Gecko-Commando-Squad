@@ -1,6 +1,16 @@
 angular.module('itisforgirls')
-    .controller('VoteCtrl', function ($scope) {
-   	$scope.categories = categories;
+    .controller('VoteCtrl', function ($scope, $routeParams) {
+    	if ($routeParams.email=="email@email.com") {
+    		$scope.categories = categories;
+    		$scope.orig = angular.copy($scope.categories);
+    		$scope.success = true;
+    	}
+    	$scope.resetRating = function() {
+    		$scope.categories = angular.copy($scope.orig);
+    	}
+    	$scope.submitRating = function() {
+    		
+    	}
     });
  
  angular.module('itisforgirls')
