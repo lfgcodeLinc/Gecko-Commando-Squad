@@ -40,8 +40,12 @@
           <li><a ng-href="#/about">About</a></li>
           <li><a ng-href="#">Contact</a></li>
           <li><a ng-href="#/registration">Registration</a></li>
+<<<<<<< HEAD
 	  <li><a ng-class="getClass('#/admin/login')" ng-href="#/admin/login">Admin</a></li>
+=======
+	        <li><a ng-href="#/admin_login">Admin</a></li>
           <li><a ng-href="#/reports">Reports</a></li>
+>>>>>>> caca03d9c5c365bcb716ab45f13b16c444a27f28
         </ul>
         <h3 class="text-muted">WIIT</h3>
       </div>
