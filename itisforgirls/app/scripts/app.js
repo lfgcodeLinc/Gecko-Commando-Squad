@@ -51,6 +51,9 @@ angular
           templateUrl: 'views/reports.html',
           controller : 'ReportsCtrl'
         })
+        .when('/submitRating', {
+          templateUrl: 'views/submitRating.html'
+        })
       .otherwise({
         redirectTo: '/'
       });

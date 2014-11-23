@@ -1,5 +1,5 @@
 angular.module('itisforgirls')
-    .controller('VoteCtrl', function ($scope, $routeParams) {
+    .controller('VoteCtrl', function ($scope, $routeParams, $location) {
     	if ($routeParams.email=="email@email.com") {
     		$scope.categories = categories;
     		$scope.orig = angular.copy($scope.categories);
@@ -9,7 +9,7 @@ angular.module('itisforgirls')
     		$scope.categories = angular.copy($scope.orig);
     	}
     	$scope.submitRating = function() {
-    		
+    		$location.path('/submitRating');
     	}
     });
  
@@ -48,8 +48,11 @@ angular.module('itisforgirls')
     }
 });
  var categories = [
-    { name: 'Category 1', projects: [{name: "Project A", rating: {current: -1, max: 5}},{name: "Project D", rating: {current: -1, max: 5}}] },
-    { name: 'Category 2', projects: [{name: "Project B", rating: {current: -1, max: 5}},{name: "Project E", rating: {current: -1, max: 5}}] },
-    { name: 'Category 3', projects: [{name: "Project C", rating: {current: -1, max: 5}},{name: "Project F", rating: {current: -1, max: 5}}] }
+    { name: "Mobile App Development", projects: [{name: "Team A", rating: {current: -1, max: 5}},{name: "Team B", rating: {current: -1, max: 5}}] },
+    { name: "Creating Animation with MITs Scratch", projects: [{name: "Team B", rating: {current: -1, max: 5}},{name: "Team E", rating: {current: -1, max: 5}}] },
+    { name: "Web Design", projects: [{name: "Team C", rating: {current: -1, max: 5}},{name: "Team F", rating: {current: -1, max: 5}}] },
+    { name: "Lego Robotics", projects: [{name: "Team C", rating: {current: -1, max: 5}},{name: "Team F", rating: {current: -1, max: 5}}] },
+ 	{ name: "Microsoft Kodu Game Development", projects: [{name: "Team C", rating: {current: -1, max: 5}},{name: "Team F", rating: {current: -1, max: 5}}] }, 
+	{ name: "Video Editing", projects: [{name: "Team C", rating: {current: -1, max: 5}},{name: "Team F", rating: {current: -1, max: 5}}] } 
   ];
 
