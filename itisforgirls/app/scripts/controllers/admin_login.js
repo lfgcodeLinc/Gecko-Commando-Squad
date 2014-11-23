@@ -21,4 +21,6 @@ $scope.submitForm = function() {
         //console.log(formData);
     };
 
+    $scope.getClass = function(path) {
+ if (path == "/" && $location.path() == "/") { return "active"; } else if (path == "/") { return ""; } return "active" } else { return "" } }
   });
