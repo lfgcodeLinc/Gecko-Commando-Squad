@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('gccdApp', [
+  .module('itisforgirls', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -17,7 +17,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -34,6 +34,10 @@ angular
         .when('/admin_login', {
           templateUrl: 'views/admin_login.html',
           controller : 'AdminLoginCtrl'
+        })
+         .when('/vote/:email/:eventid', {
+          templateUrl: 'views/vote.html',
+          controller : 'VoteCtrl'
         })
       .otherwise({
         redirectTo: '/'
