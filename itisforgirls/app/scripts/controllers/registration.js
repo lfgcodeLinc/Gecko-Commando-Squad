@@ -8,12 +8,12 @@
  * Controller of the codelincTestApp
  */
 angular.module('itisforgirls')
-  .controller('RegistrationCtrl', ['$scope', function($scope) {
+  .controller('RegistrationCtrl', ['$scope', '$location', function($scope, $location) {
       $scope.master = {};
 
       $scope.update = function(user) {
-         var uName = user.name;
-         var uEmail = user.email;
+         //var uName = user.name;
+         //var uEmail = user.email;
 
           /*function go() {
               var userEmail = uEmail;
@@ -39,6 +39,7 @@ angular.module('itisforgirls')
               });
           }
 */
+          $location.path('/regConfirmation');
       };
 
     }]);

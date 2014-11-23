@@ -54,6 +54,9 @@ angular
         .when('/submitRating', {
           templateUrl: 'views/submitRating.html'
         })
+        .when('/regConfirmation', {
+          templateUrl: '/views/regConfirmation.html'
+        })
       .otherwise({
         redirectTo: '/'
       });
