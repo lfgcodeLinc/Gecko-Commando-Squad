@@ -5,7 +5,19 @@
    <p> Event Name: <input type="text"></p>
    <p> Start Date: <input type="text"></p>
    <p> End Date: <input type="text"></p>
- <button type="submit" class="btn" >Submit</button>
+   <div class="form-group" data-ng-repeat="choice in choices">
+<label for="choice" ng-show="showChoiceLabel(choice)">Choices</label>
+  
+  <input type="text" ng-model="choice.name" name="" placeholder="Enter a category name">
+  
+</div>
+<button type="button" class="btn btn-primary" ng-show="showAddChoice(choice)" ng-click="addNewChoice()">Add another choice</button>
+   <div id="choicesDisplay">
+      {{ choices }}
+    </div>
+
+ <button type="submit" class="btn btn-success" >Submit</button>
+
   </form>
 </div>
 
