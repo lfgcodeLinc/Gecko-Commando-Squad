@@ -7,8 +7,8 @@
  * # RegistrationCtrl
  * Controller of the codelincTestApp
  */
-angular.module('codelincTestApp')
-  .controller('AdminHomeCtrl', function ($scope) {
+angular.module('itisforgirls')
+  .controller('ReportsCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
