@@ -35,6 +35,14 @@ angular
           templateUrl: 'views/admin_login.html',
           controller : 'AdminLoginCtrl'
         })
+        .when('/admin_home', {
+          templateUrl: 'views/admin_home.html',
+          controller : 'AdminHomeCtrl'
+        })
+        .when('/create_event', {
+          templateUrl: 'views/create_event.html',
+          controller : 'CreateEventCtrl'
+        })
       .otherwise({
         redirectTo: '/'
       });

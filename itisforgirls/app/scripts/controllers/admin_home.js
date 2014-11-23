@@ -8,17 +8,10 @@
  * Controller of the codelincTestApp
  */
 angular.module('codelincTestApp')
-  .controller('AdminLoginCtrl', function ($scope) {
+  .controller('AdminHomeCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-
-$scope.submitForm = function() {
-        console.log("posting data....");
-        formData = $scope.form;
-        //console.log(formData);
-    };
-
   });
