@@ -39,6 +39,10 @@ body {
   }
 }
 
+.events-item {
+  text-decoration-style: none;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -98,6 +102,7 @@ body {
 }
 ul.rating {
     display: inline-block;
+    text-decoration:none;
 }
 .rating li {
     display: inline-block;
@@ -106,6 +111,7 @@ ul.rating {
     font-weight: bold;
     cursor: pointer;
     font-size: 30px;
+    text-decoration: none;
 }
 .rating .filled {
     color: red;

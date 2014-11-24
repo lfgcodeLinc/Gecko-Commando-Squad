@@ -1,5 +1,5 @@
 <div ng-show="success">
-	<h2>Summer Camp Events Rating</h2>
+	<h3>Summer Camp Events Rating</h3>
 	<div ng-repeat="category in categories">
   	<h4 class="well-lg alert-success">{{category.name}}</h4>
 		<ul>
@@ -13,7 +13,7 @@
 	     </ul>
      </div>
      <button type="button" ng-click="resetRating()" class="btn">Reset</button>
-     <button type="button" ng-click ="submitRating()" class="btn">Submit</button>
+     <button type="button" ng-click ="submitRating()" class="btn btn-success">Submit</button>
 </div>
 <div ng-hide="success">
 	<h3>This event is not available for ratings.</h3>
