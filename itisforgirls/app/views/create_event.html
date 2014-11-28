@@ -1,0 +1,26 @@
+<h1>CREATE EVENT</h1>
+
+<div class="well-lg">
+  <form action='#/admin/home' ng-controller="EventCreateCtrl" ng-submit="submitEventCreate()">
+   <!--<p> Event Name: <input type="text" ng-model="event-name"></p>-->
+   <p> Start Date: <input type="text"></p>
+   <p> End Date: <input type="text"></p> 
+   <div class="form-group" data-ng-repeat="choice in choices">
+
+ 
+  <input type="text" ng-model="choice.name" name="" placeholder="Enter a category name">
+  <a href="#/admin/event/a/b"><button type="button" class="btn btn-warning" ng-click="addNewProject(choice)">Add {{choice.name}} Project</button></a>
+
+
+</div>
+
+<button type="button" class="btn btn-success" id="choicebox" ng-show="showAddCategory(choice)" ng-click="addNewCategory()">Add Category</button>
+   <div id="choicesDisplay">
+      {{ choices }}
+    </div>
+
+ <button type="submit" class="btn btn-primary" >Save</button>
+
+  </form>
+</div>
+

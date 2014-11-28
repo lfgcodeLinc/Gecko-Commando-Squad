@@ -1,0 +1,24 @@
+<h1>CREATE Project</h1>
+
+<div class="well-lg">
+  <form action='#/admin/event' ng-controller="EventCreateCtrl" ng-submit="submitEventCreate()">
+   <p> Project Name: <input type="text" ng-model="project-name"></p>
+
+   <div class="form-group" data-ng-repeat="student in students">
+
+
+  <input type="text" ng-model="student.name" name="" placeholder="Enter a category name">
+  <button type="button" class="btn btn-warning" >Add {{student.name}}</button>
+
+
+</div>
+
+ <a href="#/admin/event"><button type="button" class="btn btn-success" id="choicebox" ng-show="showAddStudent(student)" ng-click="addNewStudent()">Add Category</button></a>
+   <div id="choicesDisplay">
+      {{ students }}
+    </div>
+
+ <button type="submit" class="btn btn-primary" >Save</button>
+
+  </form>
+</div>
